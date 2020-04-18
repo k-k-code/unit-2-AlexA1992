@@ -9,22 +9,23 @@ public class Passenger {
     /**
      * Имя пассажира
      */
-    public String name;
+    private String name;
     /**
      * Фамили пассажира
      */
-    String surname;
+    private String surname;
     /**
      * Отчество пассажира
      */
-    String secondName;
+    private String secondName;
     /**
      * Номер документа, удостоверяющего личность
      */
-    String docNumber;
+    private String docNumber;
 
     /**
      * Конструктор, заполняющий единственно поле.
+     *
      * @param docNumberArg - номер документа, удостоверяющего личность.
      */
     public Passenger(String docNumberArg) {
@@ -33,10 +34,11 @@ public class Passenger {
 
     /**
      * Конструктор, заполняющий все поля.
-     * @param name - имя пассажира
-     * @param surname - фамилия пассажира
+     *
+     * @param name       - имя пассажира
+     * @param surname    - фамилия пассажира
      * @param secondName - отчество пассажира
-     * @param docNumber - номер документа, удостоверяюего личность
+     * @param docNumber  - номер документа, удостоверяюего личность
      */
     public Passenger(String name, String surname, String secondName, String docNumber) {
         this(docNumber);
@@ -47,6 +49,7 @@ public class Passenger {
 
     /**
      * Возвращает полное имя как склеенные имя, фамилию и отчество, разделенне пробелом.
+     *
      * @return полное имя
      */
     public String getFullName() {
@@ -56,6 +59,7 @@ public class Passenger {
 
     /**
      * Возвращает полное имя как склеенные имя, фамилию и отчество, разделеные пробелом и предваряемые префиксом.
+     *
      * @param prefix обращение к пассажирц, подставляемое перед именем.
      * @return полное имя с префиксом.
      */
@@ -63,5 +67,48 @@ public class Passenger {
         String fullName = prefix + " " + getFullName();
         return fullName;
     }
+//геттеры и сеттеры--------------------------------------
 
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
+    }
+
+    public String getDocNumber() {
+        return docNumber;
+    }
+
+    public void setDocNumber(String docNumber) {
+        this.docNumber = docNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Passenger{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", docNumber='" + docNumber + '\'' +
+                '}';
+    }
 }

@@ -89,6 +89,7 @@ public abstract class Transport {
      * Возвращает текстовое представление объекта
      * @return текстовое представление объекта
      */
+
     @Override
     public String toString() {
         return "Transport{" +

@@ -1,5 +1,9 @@
 package ru.brunoyam.oop.models.transport;
 
+import ru.brunoyam.oop.models.Passenger;
+
+import java.util.Arrays;
+
 /**
  * Автобус прикрепленный к определенному маршруту.
  */
@@ -13,24 +17,29 @@ public class Bus extends Transport {
      */
     private int stopsNumber;
 
+    //добавляем поле пассажиров купивших билет
+    private Passenger[] busPassengers;
+
+
     /**
      * Конструктор заполняющий все поля
-     * @param hasToilet наличие туалет
+     *
+     * @param hasToilet   наличие туалет
      * @param stopsNumber количество остановок на маршруте
-     * @param travelTime время в пути
+     * @param travelTime  время в пути
      * @param seatsNumber количество мест
-     * @param cost стоимость билета
+     * @param cost        стоимость билета
      */
-    public Bus(boolean hasToilet, int stopsNumber,
-               int travelTime, int seatsNumber, int cost) {
-
+    public Bus(int travelTime, int seatsNumber, int cost, boolean hasToilet, int stopsNumber, Passenger[] busPassengers) {
         super(travelTime, seatsNumber, cost);
         this.hasToilet = hasToilet;
         this.stopsNumber = stopsNumber;
+        this.busPassengers = busPassengers;
     }
 
     /**
      * Геттер для поля {@link #hasToilet hasToilet}
+     *
      * @return наличие туалета
      */
     public boolean isHasToilet() {
@@ -39,6 +48,7 @@ public class Bus extends Transport {
 
     /**
      * Геттер для поля {@link #stopsNumber stopsNumber}
+     *
      * @return количество остановок
      */
     public int getStopsNumber() {
@@ -47,22 +57,30 @@ public class Bus extends Transport {
 
     /**
      * Сеттер для поля {@link @stopsNumber stopsNumber}
+     *
      * @param stopsNumber количество остановок
      */
     public void setStopsNumber(int stopsNumber) {
         this.stopsNumber = stopsNumber;
     }
 
+// геттер для поля Passengers
+    public Passenger[] getTrainPassengers() {
+        return busPassengers;
+    }
+
     /**
      * Возвращает текстовое представление объекта
+     *
      * @return текстовое представление объекта
      */
+
     @Override
     public String toString() {
-        String transportDescription = super.toString() + " particular: ";
-        return transportDescription + "Bus{" +
+        return "Bus{" +
                 "hasToilet=" + hasToilet +
                 ", stopsNumber=" + stopsNumber +
+                ", busPassengers=" + Arrays.toString(busPassengers) +
                 '}';
     }
 }
