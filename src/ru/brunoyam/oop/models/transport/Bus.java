@@ -78,6 +78,7 @@ public class Bus extends Transport {
     @Override
     public String toString() {
         return "Bus{" +
+                super.toString() +
                 "hasToilet=" + hasToilet +
                 ", stopsNumber=" + stopsNumber +
                 ", busPassengers=" + Arrays.toString(busPassengers) +

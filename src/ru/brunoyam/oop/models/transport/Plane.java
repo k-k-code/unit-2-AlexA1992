@@ -42,6 +42,7 @@ public class Plane extends Transport {
     @Override
     public String toString() {
         return "Plane{" +
+                super.toString() +
                 "luggage=" + luggage +
                 ", planePassengers=" + Arrays.toString(planePassengers) +
                 '}';

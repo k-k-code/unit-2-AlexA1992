@@ -21,7 +21,7 @@ public abstract class Transport {
     /**
      * Конструктор без аргументов
      */
-    public Transport() {
+   /* public Transport() {
         System.out.println("transport was created!");
     }
 
@@ -92,11 +92,10 @@ public abstract class Transport {
 
     @Override
     public String toString() {
-        return "Transport{" +
-                "travelTime=" + travelTime +
+        return  "travelTime=" + travelTime +
                 ", seatsNumber=" + seatsNumber +
                 ", cost=" + cost +
-                '}';
+                ',';
     }
 
 }

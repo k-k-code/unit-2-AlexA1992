@@ -1,5 +1,6 @@
 package ru.brunoyam.oop.models.transport;
 
+import ru.brunoyam.oop.models.Cabin;
 import ru.brunoyam.oop.models.Passenger;
 
 import java.util.Arrays;
@@ -38,6 +39,7 @@ public class Ship extends Transport {
     @Override
     public String toString() {
         return "Ship{" +
+                super.toString() +
                 "hasCabins=" + hasCabins +
                 ", cabinQuantity=" + cabinQuantity +
                 ", cabinsArray=" + Arrays.toString(cabinsArray) +

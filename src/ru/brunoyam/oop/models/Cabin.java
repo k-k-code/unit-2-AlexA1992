@@ -1,4 +1,4 @@
-package ru.brunoyam.oop.models.transport;
+package ru.brunoyam.oop.models;
 
 import java.util.Arrays;
 
