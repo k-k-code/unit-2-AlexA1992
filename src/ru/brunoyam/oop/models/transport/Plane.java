@@ -11,10 +11,10 @@ public class Plane extends Transport {
     /**
      * Багаж включен в стоимость билета
      */
-    private boolean luggage;
+    private final boolean luggage;
 
     //добавляем поле пассажиров купивших билет
-    private Passenger[] planePassengers;
+    private final Passenger[] planePassengers;
 
     /**
      * Конструктор, заполняющий все поля.
@@ -42,7 +42,6 @@ public class Plane extends Transport {
     @Override
     public String toString() {
         return "Plane{" +
-                super.toString() +
                 "luggage=" + luggage +
                 ", planePassengers=" + Arrays.toString(planePassengers) +
                 '}';

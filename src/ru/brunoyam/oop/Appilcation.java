@@ -1,7 +1,5 @@
 package ru.brunoyam.oop;
 
-import ru.brunoyam.oop.models.Cabin;
-import ru.brunoyam.oop.models.Compartment;
 import ru.brunoyam.oop.models.Passenger;
 import ru.brunoyam.oop.models.transport.*;
 
