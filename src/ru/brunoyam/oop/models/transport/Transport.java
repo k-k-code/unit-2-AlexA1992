@@ -1,6 +1,6 @@
 package ru.brunoyam.oop.models.transport;
 
-/**
+ /**
  * Абстрактный класс транспорт.
  */
 public abstract class Transport {

@@ -11,14 +11,14 @@ public class Bus extends Transport {
     /**
      * Наличие туалета в автобусе
      */
-    private boolean hasToilet;
+    private final boolean hasToilet;
     /**
      * Количество остановок на маршруте
      */
     private int stopsNumber;
 
     //добавляем поле пассажиров купивших билет
-    private Passenger[] busPassengers;
+    private final Passenger[] busPassengers;
 
 
     /**

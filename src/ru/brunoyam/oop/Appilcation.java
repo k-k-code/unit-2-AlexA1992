@@ -5,7 +5,7 @@ import ru.brunoyam.oop.models.Compartment;
 import ru.brunoyam.oop.models.Passenger;
 import ru.brunoyam.oop.models.transport.*;
 
-/**
+ /**
  * Главный класс нашего приложения.
  */
 public class Appilcation {
