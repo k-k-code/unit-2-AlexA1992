@@ -1,4 +1,4 @@
-package ru.brunoyam.oop.models.transport;
+package ru.brunoyam.oop.models;
 
 public class Cabin {
     int cabinSeats;
@@ -12,7 +12,7 @@ public class Cabin {
         //this.passengers = passengers;
     }
 
-    // только геттеры--------------------
+    //  только геттеры--------------------
     public int getCabinSeats() {
         return cabinSeats;
     }

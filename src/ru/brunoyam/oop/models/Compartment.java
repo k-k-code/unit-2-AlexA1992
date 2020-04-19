@@ -1,4 +1,4 @@
-package ru.brunoyam.oop.models.transport;
+package ru.brunoyam.oop.models;
 
 public class Compartment {
     int compartmentSeats;
@@ -11,7 +11,7 @@ public class Compartment {
         this.comfortClass = comfortClass;
     }
 
-    // только геттеры--------------------
+    //  только геттеры--------------------
 
     public String getComfortClass() {
         return comfortClass;

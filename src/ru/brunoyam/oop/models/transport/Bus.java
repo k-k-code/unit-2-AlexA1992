@@ -68,7 +68,6 @@ public class Bus extends Transport {
     public Passenger[] getTrainPassengers() {
         return busPassengers;
     }
-
     /**
      * Возвращает текстовое представление объекта
      *
@@ -78,6 +77,7 @@ public class Bus extends Transport {
     @Override
     public String toString() {
         return "Bus{" +
+                super.toString() +
                 "hasToilet=" + hasToilet +
                 ", stopsNumber=" + stopsNumber +
                 ", busPassengers=" + Arrays.toString(busPassengers) +

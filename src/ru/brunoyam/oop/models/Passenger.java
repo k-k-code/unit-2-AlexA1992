@@ -56,7 +56,6 @@ public class Passenger {
         String fullName = name + " " + surname + " " + secondName;
         return fullName;
     }
-
     /**
      * Возвращает полное имя как склеенные имя, фамилию и отчество, разделеные пробелом и предваряемые префиксом.
      *

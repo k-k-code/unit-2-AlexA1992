@@ -15,8 +15,7 @@ public class Plane extends Transport {
 
      //добавляем поле пассажиров купивших билет
      private final Passenger[] planePassengers;
-
-    /**
+     /**
      * Конструктор, заполняющий все поля.
      * @param travelTime время в пути
      * @param seatsNumber количество мест
