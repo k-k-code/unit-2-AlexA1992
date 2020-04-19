@@ -6,10 +6,10 @@ import ru.brunoyam.oop.models.Passenger;
 import java.util.Arrays;
 
 public class Train extends Transport {
-    private boolean hasCompartments;
-    private int compartmentsQuantity;
-    private Compartment[] compartmentArray;
-    private Passenger[] trainPassengers;
+    private final boolean hasCompartments;
+    private final int compartmentsQuantity;
+    private final Compartment[] compartmentArray;
+    private final Passenger[] trainPassengers;
 
     public Train(int travelTime, int seatsNumber, int cost, boolean hasCompartments, int compartmentQuantity, Compartment[] compartmentArray, Passenger[] trainPassengers) {
         super(travelTime, seatsNumber, cost);

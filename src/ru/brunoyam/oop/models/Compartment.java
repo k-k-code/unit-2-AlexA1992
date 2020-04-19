@@ -1,7 +1,5 @@
 package ru.brunoyam.oop.models;
 
-import java.util.Arrays;
-
 public class Compartment {
     int compartmentSeats;
     String comfortClass;
@@ -13,7 +11,7 @@ public class Compartment {
         this.comfortClass = comfortClass;
     }
 
-    // только геттеры--------------------
+    //  только геттеры--------------------
 
     public String getComfortClass() {
         return comfortClass;

@@ -4,19 +4,18 @@ import ru.brunoyam.oop.models.Passenger;
 
 import java.util.Arrays;
 
-/**
+ /**
  * Авиатранспорт (самолет) прикрепленный к определенному авиамаршруту
  */
 public class Plane extends Transport {
-    /**
-     * Багаж включен в стоимость билета
-     */
-    private boolean luggage;
+     /**
+      * Багаж включен в стоимость билета
+      */
+     private final boolean luggage;
 
-    //добавляем поле пассажиров купивших билет
-    private Passenger[] planePassengers;
-
-    /**
+     //добавляем поле пассажиров купивших билет
+     private final Passenger[] planePassengers;
+     /**
      * Конструктор, заполняющий все поля.
      * @param travelTime время в пути
      * @param seatsNumber количество мест

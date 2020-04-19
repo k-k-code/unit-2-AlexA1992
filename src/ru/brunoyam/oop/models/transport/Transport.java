@@ -1,10 +1,9 @@
 package ru.brunoyam.oop.models.transport;
 
-/**
+ /**
  * Абстрактный класс транспорт.
  */
 public abstract class Transport {
-
     /**
      * Время в пути
      */
@@ -21,7 +20,7 @@ public abstract class Transport {
     /**
      * Конструктор без аргументов
      */
-   /* public Transport() {
+    public Transport() {
         System.out.println("transport was created!");
     }
 
@@ -92,10 +91,11 @@ public abstract class Transport {
 
     @Override
     public String toString() {
-        return  "travelTime=" + travelTime +
+        return "Transport{" +
+                "travelTime=" + travelTime +
                 ", seatsNumber=" + seatsNumber +
                 ", cost=" + cost +
-                ',';
+                '}';
     }
 
 }

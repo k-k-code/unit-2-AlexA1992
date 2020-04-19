@@ -1,7 +1,5 @@
 package ru.brunoyam.oop.models;
 
-import java.util.Arrays;
-
 public class Cabin {
     int cabinSeats;
     String comfortClass;
@@ -14,7 +12,7 @@ public class Cabin {
         //this.passengers = passengers;
     }
 
-    // только геттеры--------------------
+    //  только геттеры--------------------
     public int getCabinSeats() {
         return cabinSeats;
     }
