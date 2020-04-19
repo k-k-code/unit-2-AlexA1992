@@ -1,7 +1,5 @@
 package ru.brunoyam.oop;
 
-import ru.brunoyam.oop.models.Cabin;
-import ru.brunoyam.oop.models.Compartment;
 import ru.brunoyam.oop.models.Passenger;
 import ru.brunoyam.oop.models.transport.*;
 
@@ -12,7 +10,7 @@ public class Appilcation {
 
     /**
      * Главный класс приложения
-     * @param args - набор аргументов запуска приложения.
+     * @param args - набор аргументов запуска приложения
      */
     public static void main(String[] args) {
         //создаем пассажиров судна

@@ -1,6 +1,4 @@
-package ru.brunoyam.oop.models;
-
-import java.util.Arrays;
+package ru.brunoyam.oop.models.transport;
 
 public class Cabin {
     int cabinSeats;
